@@ -12,9 +12,14 @@ A Colorado Board of Elections employee has asked us to audit a recent local cong
 - Data Source: election_results.csv
 - Software: Python 3.6.1, Visual Studio Code, 1.38.1
 
-## Summary
-There were 369,711 total votes cast in the election.
-The candidates were
+## Election-Audit Results
+There were 369,711 total votes cast in the election. Votes were cast from 3 counties
+1. Jefferson cast 38,855 votes, which was 10.5% of total votes.
+2. Denver cast 306,055 votes, which was 82.8% of total votes.
+3. Arapahoe cast 24,801 votes, which was 6.7% of total votes.
+The county with the largest number of votes was Denver.
+
+There were three congressional candidates in the election.
 1. Charles Casper Stockham
 2. Diana DeGette
 3. Raymon Anthony Doane
@@ -27,6 +32,6 @@ The candidate results were
 The winner of the election was
 - Diana DeGette who received 73.8% of the vote and 272,892 total votes.
 
-## Challenge Overview
-
-## Challenge Summary
+![Election_Analysis_Output.png](Election_Analysis_Output.png)
+## Election-Audit Summary
+The election department can use this script for future elections. The script will provide the user with the number of votes per candidate and the number of votes per county, but the department will need to use the same file type. If the election department opts to change the data file, then the script will need to be edited to capture the row with the candidate name and the row with the county name. This script can also be modified to review the candidate popularity within a particular county (number of votes and vote percentage).
